@@ -71,6 +71,14 @@ class Counter extends React.Component {
 }
 ```
 
+Alternatively if your initial state does not depend on `props` you can use class property initializer:
+```javascript
+class Counter extends React.Component {
+  state = {message: 'Hello!'};
+  // ...
+}
+```
+
 With `createReactClass()`, you have to provide a separate `getInitialState` method that returns the initial state:
 
 ```javascript
